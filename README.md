@@ -125,20 +125,20 @@ If the verification is successful, then it prints
 
 Here is a sample verification of the Python3 solution.
 ```
-$ python3 verifier.py ../generator/inputfile ../python/wordslines.py 
-Input file = ../generator/inputfile (100024 bytes), program = ../cpp/build/wordslines
-OK
-Time = 10418 us
-$ 
-```
-
-Here is a sample verification of the C++ executable.
-```
 $ python3 verifier.py ../generator/inputfile ../cpp/build/wordslines 
 Input file = ../generator/inputfile (100024 bytes), program = ../python/wordslines.py
 OK
 Time = 32831 us
 $
+```
+
+Here is a sample verification of the C++ executable.
+```
+$ python3 verifier.py ../generator/inputfile ../python/wordslines.py 
+Input file = ../generator/inputfile (100024 bytes), program = ../cpp/build/wordslines
+OK
+Time = 10418 us
+$ 
 ```
 
 
