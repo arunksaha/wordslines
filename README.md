@@ -84,7 +84,7 @@ How can we improve upon the simple solution?
 
 `TO-BE-PUBLISHED`
 
-# Verification
+# Verification and Measurement
 
 ## Input File Generation
 There is a `.go` file to generate an input text file
@@ -120,20 +120,25 @@ Then it runs the executable with that input file.
 Finally, it compares the observed output of the
 executable with the expected output computed earlier.
 
-Here is a sample verification of the C++ executable.
-```
-$ python3 verifier.py ../generator/inputfile ../cpp/build/wordslines 
-Using file ../generator/inputfile to verify exe ../cpp/build/wordslines
-Verification successful!
-$
-```
+If the verification is successful, then it prints
+"OK" and reports the time taken for execution.
 
 Here is a sample verification of the Python3 solution.
 ```
 $ python3 verifier.py ../generator/inputfile ../python/wordslines.py 
-Using file ../generator/inputfile to verify exe ../python/wordslines.py
-Verification successful!
+Input file = ../generator/inputfile (100024 bytes), program = ../cpp/build/wordslines
+OK
+Time = 10418 us
 $ 
+```
+
+Here is a sample verification of the C++ executable.
+```
+$ python3 verifier.py ../generator/inputfile ../cpp/build/wordslines 
+Input file = ../generator/inputfile (100024 bytes), program = ../python/wordslines.py
+OK
+Time = 32831 us
+$
 ```
 
 
